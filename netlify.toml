@@ -12,7 +12,7 @@
   status = 404
 
 [context.production]
-  command = "hugo --minify"
+  command = "hugo --gc --minify"
 
 [context.deploy-preview]
   command = "hugo -b $DEPLOY_PRIME_URL"
