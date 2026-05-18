@@ -1,0 +1,41 @@
+[[main]]
+  name = "Services"
+  pageRef = "/services"
+  weight = 1
+
+[[main]]
+  name = "Events"
+  pageRef = "/events"
+  weight = 2
+
+[[main]]
+  name = "Restaurants"
+  pageRef = "/restaurants"
+  weight = 3
+
+[[main]]
+  name = "Process"
+  pageRef = "/process"
+  weight = 4
+
+[[main]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 5
+
+[[footer_studio]]
+  name = "Services"
+  pageRef = "/services"
+  weight = 1
+[[footer_studio]]
+  name = "Process"
+  pageRef = "/process"
+  weight = 2
+[[footer_studio]]
+  name = "For events"
+  pageRef = "/events"
+  weight = 3
+[[footer_studio]]
+  name = "For restaurants"
+  pageRef = "/restaurants"
+  weight = 4

@@ -1,0 +1,29 @@
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-eyebrow">01 / Services</div>
+        <h2>What we <em>arrange.</em></h2>
+      </div>
+      <p>
+        Every project is built from the ground up — palette, vessel, stem.
+        Below, a working list of the elements we design most. Mix and match,
+        or hand us the brief and we'll handle the rest.
+      </p>
+    </div>
+
+    <div class="services">
+      {{ range .Site.Data.services }}
+      <article class="svc {{ .size }}">
+        <div class="ph {{ if eq .ph "sage" }}sage{{ end }}" data-label="{{ .image_label }}"></div>
+        <div class="body">
+          <div class="num">No. {{ .num }}</div>
+          <h3>{{ .title }}</h3>
+          <p>{{ .blurb }}</p>
+          <div class="arrow"><span>{{ .meta }}</span><span>→</span></div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

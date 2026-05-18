@@ -1,0 +1,10 @@
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    {{ $items := slice "Receptions" "Corporate Events" "Brand Activations" "Restaurant Programs" "Centerpieces" "Installations" "Bouquets" "Cake Florals" }}
+    {{ range seq 2 }}
+    <span>
+      {{ range $items }}{{ . }} {{ end }}
+    </span>
+    {{ end }}
+  </div>
+</div>

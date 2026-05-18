@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-eyebrow">{{ .Title }}</div>
+        <h2>{{ .Title }}</h2>
+      </div>
+      <div>{{ .Content }}</div>
+    </div>
+    {{ block "section-body" . }}{{ end }}
+  </div>
+</section>
+{{ end }}

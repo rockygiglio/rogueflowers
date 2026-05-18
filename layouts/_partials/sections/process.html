@@ -1,0 +1,26 @@
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-eyebrow">03 / Process</div>
+        <h2>Plain <em>and</em> deliberate.</h2>
+      </div>
+      <p>
+        We keep the process small, with one designer leading from sketch to
+        load-out. No farmed-out execution, no bait-and-switch on the
+        proposal.
+      </p>
+    </div>
+
+    <div class="process">
+      {{ range .Site.Data.process }}
+      <div class="step">
+        <div class="n">{{ .n }}</div>
+        <h4>{{ .title }}</h4>
+        <p>{{ .body }}</p>
+        <div class="when">{{ .when }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

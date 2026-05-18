@@ -1,0 +1,38 @@
+<div class="wrap">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <img src="{{ "images/logo.png" | relURL }}" alt="{{ .Site.Title }}">
+      <p>Rogue <em>flowers</em></p>
+      <small>{{ .Site.Params.description }}</small>
+    </div>
+    <div>
+      <h5>Studio</h5>
+      <ul>
+        {{ range site.Menus.footer_studio }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="{{ .Site.Params.social.instagram }}">Instagram</a></li>
+        <li><a href="{{ .Site.Params.social.pinterest }}">Pinterest</a></li>
+        <li><a href="{{ .Site.Params.social.theknot }}">The Knot</a></li>
+        <li><a href="{{ "/contact" | relURL }}">Inquire</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Visit</h5>
+      {{ partial "contact-info.html" . }}
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© {{ now.Year }} {{ .Site.Title }}, LLC. All arrangements original.</span>
+    <div class="legal">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Press kit</a>
+    </div>
+  </div>
+</div>

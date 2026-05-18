@@ -1,0 +1,24 @@
+<section class="section" id="restaurants">
+  <div class="wrap restaurants">
+    <div>
+      <div class="sec-eyebrow">05 / Hospitality</div>
+      <h2 class="big">
+        Standing programs<br>
+        for <em>independent</em> rooms.
+      </h2>
+      <p class="lede-sm">
+        Weekly or bi-weekly delivery, contracted by the season. We carry the
+        vessels, manage the rotation, and quietly make the space feel cared
+        for. A short list of current and former accounts:
+      </p>
+      <ul class="resto-list">
+        {{ range .Site.Data.restaurants }}
+        <li><span class="idx">{{ .idx }}</span><span class="name">{{ .name }}</span><span class="meta">{{ .meta }}</span></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div>
+      <div class="ph resto-feature" data-label="RESTO_FEATURE.JPG — bar bouquet, low light"></div>
+    </div>
+  </div>
+</section>

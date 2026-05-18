@@ -1,0 +1,17 @@
+<section class="section cream">
+  <div class="wrap faq">
+    <div>
+      <div class="sec-eyebrow">06 / FAQ</div>
+      <h2 class="med">Common <em>questions.</em></h2>
+      <p class="muted">If yours isn't here, ask — we answer every inquiry personally.</p>
+    </div>
+    <div class="faq-list">
+      {{ range .Site.Data.faq }}
+      <details {{ if .open }}open{{ end }}>
+        <summary>{{ .q }}</summary>
+        <p>{{ .a }}</p>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>

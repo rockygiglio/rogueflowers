@@ -1,0 +1,17 @@
+<div class="wrap nav-inner">
+  <a class="brand" href="{{ "/" | relURL }}">
+    <img src="{{ "images/logo.png" | relURL }}" alt="{{ .Site.Title }}">
+    <div class="brand-name">
+      Rogue
+      <small>flowers</small>
+    </div>
+  </a>
+  <nav>
+    <ul>
+      {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+  <a href="{{ "/contact" | relURL }}" class="cta cta-nav">Request a Proposal</a>
+</div>

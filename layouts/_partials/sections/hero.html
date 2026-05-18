@@ -1,0 +1,43 @@
+{{/* Hero section for homepage */}}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Floral design studio · Est. {{ .Site.Params.founded }}</div>
+      <h1 class="display">
+        Flowers with<br>
+        a little <em>edge.</em>
+      </h1>
+      <p class="lede">
+        Rogue Flowers designs floral programs for receptions, corporate
+        events, and the dining rooms of independent restaurants — composed,
+        seasonal, never sweet for the sake of it.
+      </p>
+      <div class="hero-actions">
+        <a href="{{ "/contact" | relURL }}" class="cta sage">Start a Project</a>
+        <a href="{{ "/services" | relURL }}" class="cta ghost">Explore Services →</a>
+      </div>
+      <div class="hero-meta">
+        <div>
+          <div class="num">{{ .Site.Params.stats.events }}</div>
+          <div class="lab">Events styled</div>
+        </div>
+        <div>
+          <div class="num">{{ .Site.Params.stats.restaurants }}</div>
+          <div class="lab">Restaurant accounts</div>
+        </div>
+        <div>
+          <div class="num">{{ .Site.Params.stats.years }}</div>
+          <div class="lab">In the studio</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="stack-tag">FIG. 01 — STUDIO COMPOSITION, SPRING</div>
+      <div class="ph" data-label="HERO_IMAGE_01.JPG — full-bleed editorial floral, sage and ivory"></div>
+      <div class="stamp">
+        {{ .Site.Params.booking.status }}
+        <small>{{ .Site.Params.booking.note }}</small>
+      </div>
+    </div>
+  </div>
+</section>

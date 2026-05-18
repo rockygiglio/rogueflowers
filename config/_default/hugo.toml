@@ -1,0 +1,22 @@
+baseURL = "https://rogueflowers.studio/"
+languageCode = "en-us"
+title = "Rogue Flowers"
+enableRobotsTXT = true
+
+[permalinks]
+  services = "/services/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

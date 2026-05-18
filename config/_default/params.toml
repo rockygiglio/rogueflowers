@@ -1,0 +1,33 @@
+description = "Floral design for restaurants, receptions, and corporate events. Studio in Portland, Oregon."
+author = "Rogue Flowers"
+tagline = "Flowers with a little edge."
+founded = "2018"
+
+[brand]
+  primary = "#497254"
+  primaryDeep = "#365a41"
+  primaryTint = "#e6ede7"
+  ink = "#0e0e0e"
+  cream = "#f6f2eb"
+
+[contact]
+  phone = "(503) 555-0142"
+  email = "hello@rogueflowers.studio"
+  street = "1247 SE Madison St."
+  city = "Portland"
+  state = "Oregon"
+  zip = "97214"
+  hours = "By appointment, Tue – Sat"
+
+[social]
+  instagram = "https://instagram.com/rogue.flowers"
+  pinterest = "https://pinterest.com/rogueflowers"
+
+[stats]
+  events = "180+"
+  restaurants = "18"
+  years = "7yr"
+
+[booking]
+  status = "Booking fall '26"
+  note = "limited dates"

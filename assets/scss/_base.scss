@@ -1,0 +1,42 @@
+@import "variables";
+
+:root {
+  --sage: #{$color-sage};
+  --sage-deep: #{$color-sage-deep};
+  --sage-tint: #{$color-sage-tint};
+  --ink: #{$color-ink};
+  --ink-2: #{$color-ink-2};
+  --paper: #{$color-paper};
+  --cream: #{$color-cream};
+  --rule: #{$color-rule};
+  --rule-soft: #{$color-rule-soft};
+  --serif: #{$font-serif};
+  --sans: #{$font-sans};
+  --mono: #{$font-mono};
+  --max: #{$max-width};
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+@media (max-width: 680px) { .wrap { padding: 0 20px; } }
+
+.eyebrow, .sec-eyebrow {
+  font-size: 11px; letter-spacing: .32em; text-transform: uppercase;
+  color: var(--sage); font-weight: 500;
+}
+.eyebrow { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+.eyebrow::before { content: ""; width: 32px; height: 1px; background: var(--sage); display: inline-block; }
+.sec-eyebrow { margin-bottom: 18px; }
+.sec-eyebrow.light { color: #cbd9cf; }

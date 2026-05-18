@@ -1,0 +1,66 @@
+<section class="section dark" id="contact">
+  <div class="wrap contact">
+    <div class="contact-info">
+      <div class="sec-eyebrow light">07 / Inquire</div>
+      <h2 class="med light">
+        Tell us about<br>the <em>room.</em>
+      </h2>
+      <p class="muted-light">
+        We respond to every inquiry within two business days. The more you can
+        tell us up front, the better the first proposal.
+      </p>
+      <h3>Studio</h3>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a></dd>
+        <dt>Phone</dt><dd><a href="tel:{{ .Site.Params.contact.phone }}">{{ .Site.Params.contact.phone }}</a></dd>
+        <dt>Studio</dt><dd>{{ .Site.Params.contact.street }}<br>{{ .Site.Params.contact.city }}, {{ .Site.Params.contact.state }}</dd>
+        <dt>Hours</dt><dd>{{ .Site.Params.contact.hours }}</dd>
+        <dt>Instagram</dt><dd><a href="{{ .Site.Params.social.instagram }}">@rogue.flowers</a></dd>
+      </dl>
+    </div>
+    <form class="inquire" onsubmit="event.preventDefault(); this.querySelector('.submit').textContent='Sent — we\'ll be in touch';">
+      <div class="row">
+        <div><label>First name</label><input type="text" placeholder="Maren" required></div>
+        <div><label>Last name</label><input type="text" placeholder="Adler" required></div>
+      </div>
+      <div class="row">
+        <div><label>Email</label><input type="email" placeholder="you@studio.com" required></div>
+        <div><label>Phone (optional)</label><input type="tel" placeholder="(503) 555-0142"></div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Project type</label>
+          <select required>
+            <option value="">Select…</option>
+            <option>Reception / Private event</option>
+            <option>Corporate event</option>
+            <option>Gala / Fundraiser</option>
+            <option>Brand activation</option>
+            <option>Restaurant program</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div><label>Event date</label><input type="text" placeholder="Sept 2026 (or TBD)"></div>
+      </div>
+      <div class="row">
+        <div><label>Guest count / scale</label><input type="text" placeholder="~ 120 guests"></div>
+        <div>
+          <label>Estimated budget</label>
+          <select>
+            <option value="">Select…</option>
+            <option>Under $3K</option>
+            <option>$3K – $7K</option>
+            <option>$7K – $15K</option>
+            <option>$15K – $30K</option>
+            <option>$30K +</option>
+          </select>
+        </div>
+      </div>
+      <div class="full">
+        <label>Tell us about the project</label>
+        <textarea placeholder="Venue, palette, planner, anything you've been collecting…"></textarea>
+      </div>
+      <button type="submit" class="cta sage submit">Send Inquiry →</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,5 @@
+{{/* Reusable striped placeholder. Variant via "ph" arg: default | sage | dark */}}
+{{ $variant := .Get "variant" | default "default" }}
+{{ $label := .Get "label" }}
+{{ $extra := .Get "class" | default "" }}
+<div class="ph {{ if ne $variant "default" }}{{ $variant }}{{ end }} {{ $extra }}" data-label="{{ $label }}"></div>

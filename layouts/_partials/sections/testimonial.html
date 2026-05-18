@@ -1,0 +1,18 @@
+<section class="section sage">
+  <div class="wrap testi">
+    <div class="testi-art">
+      <div class="ph dark" data-label="TESTI_PORTRAIT.JPG — clients on event day" style="height:100%"></div>
+    </div>
+    <div>
+      {{ with index .Site.Data.testimonials 0 }}
+      <blockquote>
+        {{ .quote }}
+        <cite>
+          <strong>{{ .client }}</strong>
+          {{ .detail }}
+        </cite>
+      </blockquote>
+      {{ end }}
+    </div>
+  </div>
+</section>
